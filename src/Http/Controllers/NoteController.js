@@ -9,6 +9,8 @@ export default {
    * @returns {void}
    */
   index (req, res) {
-    User.query().then(users => res.send(users))
+    User.query().where('name', 'tests').first().then(user => {
+      console.log(user)
+    })
   }
 }
