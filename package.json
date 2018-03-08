@@ -1,0 +1,33 @@
+{
+  "name": "api-skeleton",
+  "version": "1.0.0",
+  "description": "API Skeleton.",
+  "main": "dist/build.js",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --progress --watch --display=none",
+    "build": "cross-env NODE_ENV=production webpack --progress --display=none && node ."
+  },
+  "author": "Pavel Koch <kouks@koch@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3",
+    "lodash": "^4.17.4",
+    "body-parser": "^1.18.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "cross-env": "^5.0.5",
+    "dotenv": "^5.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "nodemon-webpack-plugin": "^0.1.6",
+    "webpack": "^3.6.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
