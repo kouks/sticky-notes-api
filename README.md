@@ -1,2 +1,2 @@
-# Node Api Skeleton
+# Sticky Notes Chrome Extension API
 > Pavel Koch
