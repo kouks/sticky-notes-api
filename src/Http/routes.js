@@ -1,9 +1,11 @@
 import app from './kernel'
+// import { auth } from './middleware'
+import NoteController from '@/Http/Controllers/NoteController'
 
 /*
- * All application routes are defined here.
+ |
+ | All application routes are defined here.
+ |
  */
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.get('/', NoteController.index)

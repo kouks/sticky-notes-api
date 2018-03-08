@@ -10,9 +10,12 @@
   "author": "Pavel Koch <kouks@koch@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.13.3",
+    "knex": "^0.14.4",
     "lodash": "^4.17.4",
-    "body-parser": "^1.18.2"
+    "mysql": "^2.15.0",
+    "objection": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,12 +1,14 @@
-import dotenv from 'dotenv'
+import knex from 'knex'
+import config from 'config'
+import { Model } from 'objection'
 
 /*
 |
-| We load environment variables from the env file.
+| We boot up our database driver.
 |
 */
 
-dotenv.config()
+Model.knex(knex(config.database))
 
 /*
 |

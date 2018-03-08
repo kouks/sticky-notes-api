@@ -1,4 +1,7 @@
+import dotenv from 'dotenv'
 import { env } from '@/helpers'
+
+dotenv.config()
 
 export default {
   database: {
