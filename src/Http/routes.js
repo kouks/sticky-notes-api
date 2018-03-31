@@ -8,4 +8,5 @@ import NoteController from '@/Http/Controllers/NoteController'
  |
  */
 
-app.get('/', NoteController.index)
+app.get('/notes', NoteController.index)
+app.post('/notes', NoteController.store)
