@@ -10,3 +10,4 @@ import NoteController from '@/Http/Controllers/NoteController'
 
 app.get('/notes', NoteController.index)
 app.post('/notes', NoteController.store)
+app.delete('/notes/:note', NoteController.destroy)
