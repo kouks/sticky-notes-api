@@ -1,2 +1,2 @@
 # Sticky Notes Chrome Extension API
-> Pavel Koch
+> Pavel Koch (kouks.koch@gmail.com)
