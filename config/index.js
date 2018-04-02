@@ -4,6 +4,10 @@ import { env } from '@/helpers'
 dotenv.config()
 
 export default {
+  app: {
+    port: env('APP_PORT')
+  },
+
   database: {
     client: 'mysql',
 

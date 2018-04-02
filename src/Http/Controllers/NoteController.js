@@ -10,8 +10,8 @@ export default {
    */
   index (req, res) {
     Note.query()
-      .where('url', req.query.url)
-      .where('author', req.query.id)
+      .where('url', req.query.url || '')
+      .where('author', req.query.id || '')
       .then(notes => res.send(notes))
   },
 
@@ -37,7 +37,7 @@ export default {
    */
   destroy (req, res) {
     Note.query()
-      .where('id', req.params.note)
+      .where('id', req.params.note || '')
       .delete()
       .then(() => res.sendStatus(202))
   }
